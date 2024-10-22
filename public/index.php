@@ -4,6 +4,8 @@ use Core\Config;
 use Core\Database;
 
 require __DIR__ . '/../vendor/autoload.php';
+require './bootstrap/bootstrap.php';
+require 'Container.php';
 
 $config = [];
 foreach (glob(__DIR__ . '/../config/*.php') as $file) {
